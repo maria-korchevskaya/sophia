@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/9871d9230b.js"></script>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/SPCC-area-styles.css"/>
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div class='small reveal' id='new_lc_notification' data-reveal >
+        <h4>New Message</h4>
+        <ul class="tabs" data-tabs id="lc-notification-tabs">
+          <li class="tabs-title is-active"><a href="#individual" aria-selected="true">Individual</a></li>
+          <li class="tabs-title"><a href="#all">All students</a></li>
+          <li class="tabs-title"><a href="#program">Program</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="lc-notification-tabs">
+          <div class="tabs-panel is-active" id="individual">
+            <form>
+              <label>Email</label>
+              <input type="text">
+              <label>Course</label>
+              <select style="font-size:13px;">
+                <option>---</option>
+                <option value="accounting">Accounting</option>
+                <option value="approacher_to_study_religions">Approaches to Study Religion</option>
+                <option value="introduction_to_ethics">Introduction to Ethics</option>
+                <option value="microeconomics">Microeconomics</option>
+                <option value="macroeconomics">Macroeconomics</option>
+              </select>
+              <label>Text</label>
+              <textarea rows="3"></textarea>
+              <label>Expiration Date</label>
+              <input type="date" style="font-size:13px;">
+            </form>
+          </div>
+          <div class="tabs-panel" id="all">
+            <form>
+              <label>Text</label>
+              <textarea rows="3"></textarea>
+              <label>Expiration Date</label>
+              <input type="date" style="font-size:13px;">
+            </form>     
+          </div>
+          <div class="tabs-panel" id="program">
+            <form>
+              <label>Program</label>
+              <select style="font-size:13px;">
+                <option>---</option>
+                <option value="college_courses">College Courses</option>
+                <option value="capella">Capella</option>
+                <option value="rasmussen">Rasmussen</option>
+              </select>
+              <label>Text</label>
+              <textarea rows="3"></textarea>
+              <label>Expiration Date</label>
+              <input type="date" style="font-size:13px;">
+            </form>
+          </div>
+        </div>
+        <br>
+        <a class='secondary button' label='cancel'>Cancel</a>
+        <a class='button' label='ok'>Send</a>
+        <!-- <a class='close-reveal-modal' aria-label='Сlose'>&#215;</a>-->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class='tiny reveal' id='delete_notification' data-reveal >
+        <h4>&nbsp</h4>
+        <p>Are you sure that you want to delete this notification?</p> 
+        <br>
+        <a class='small secondary button' label='cancel'>Cancel</a>
+        <a class='small button' label='ok'>OK</a>
+        <!-- <a class='close-reveal-modal' aria-label='Сlose'>&#215;</a>-->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="top-bar" id="header">
+        <div class="top-bar-left">
+          <ul class="title-area">
+            <li class="name"> 
+              <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+            </li>  
+          </ul> 
+        </div>  
+      </div> 
+      <!-- #header -->
+      <div id="content" class="admin-area-background">
+        <div class="breadcrumbs-row-color">
+          <div class="row">
+            <div class="large-12 columns">
+              <nav area-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home</a></li>
+                  <li><span class="show-for-sr">Current: </span>SP Notifications</li>
+
+                </ul>
+              </nav> 
+            </div>
+          </div>
+        </div>   
+        <!-- tabs go below --> 
+        <div class="row">
+          <ul class="tabs" data-tabs id="header-menu">
+            <li class="tabs-title"><a href="#panel1">SP Students</a></li>
+            <li class="tabs-title"><a href="#panel2">Promo Codes</a></li>
+            <li class="tabs-title"><a href="#panel3">SP Class View</a></li>
+            <li class="tabs-title is-active"><a href="#panel4" area-selected="true">SP Notifications</a></li>
+            <li class="tabs-title"><a href="#panel5">Section Manager</a></li>
+            <li class="tabs-title"><a href="#panel6">Transferman Partners</a></li>
+          </ul> 
+        </div>
+        <div class="row">
+          <div class="tabs-content" data-tabs-content="header-menu">
+              <div class="tabs-panel" id="panel1"></div>
+              <div class="tabs-panel" id="panel2"></div>
+              <div class="tabs-panel" id="panel3"></div>
+              <div class="tabs-panel is-active" id="panel4" style="margin-left:20px;">
+                <div>
+                  <a class="btn btn-default btn-sm" href="#" data-open="new_lc_notification">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp; New Message</a>
+                </div><br>
+                <table class="admin-table hover">
+                  <tr>
+                    <th width="25%">Audience</th>
+                    <th width="57%">Text</th>
+                    <th width="8%">Pub Date</th>
+                    <th width="8%">Exp Date</th>
+                    <!-- <th width="2%">&nbsp;</th> -->
+                    <th width="2%">&nbsp;</th>
+                    </tr>
+                    <tr>
+                      <td>All students</td>
+                      <td>Please call Learning Coach to receive the latest details for your certification. Then we can plan how to give you the certificate. Please contact us as soon as possible...</td>
+                      <td>9/23/16</td>
+                      <td>10/25/16</td>
+                      <!-- <td><a href="#" data-open="edit-lc-notification">Edit</a></td> -->
+                      <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="/SPCC/LC_student_record_page.html">Maria Korchevskaya</a> - Baseball for Lamers</td>
+                       <td>Please call Learning Coach to Sophia to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>Introduction to Study Religions</td>
+                       <td>Please call Learning Coach to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>Introduction to Study Religions</td>
+                       <td>Please call Learning Coach to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td>Introduction to Study Religions</td>
+                       <td>Please call Learning Coach to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Chris Hayes</a> - Pros and Cons of Fishing</td>
+                       <td>Please call Learning Coach to Sophia to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Dack Ragus</a> - How to prove that I am right to the cusromer</td>
+                       <td>Please call Learning Coach to Sophia to...</td>
+                       <td>9/23/16</td>
+                       <td>10/25/16</td>
+                       <td><a href="#" data-open="delete_notification">Delete</a></td>
+                    </tr>
+                </table>
+
+              </div>
+            <!-- not active tabs -->
+              
+              <div class="tabs-panel" id="panel5"></div>
+              <div class="tabs-panel" id="panel6"></div>
+              <!-- end -->
+          </div>
+        </div>    
+      </div>
+      <!-- #content -->
+      <div id="footer">
+        <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+        </div>
+      </div>
+      <!-- #footer -->
+    </div>
+    <!-- #wrapper -->  
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>
+    

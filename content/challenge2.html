@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/content-area-styles.css"/>
+  </head>
+  
+  <body>
+    <!-- pop-up for removing a concept -->
+    <div class="reveal tiny" id="remove_concept_from_challenge2" data-reveal>
+      <p>Are you sure you want to remove this concept from challenge 2.0?</p>
+      <a type="button" class="button secondary round-corners" style="margin-right:10px;"><strong>Cancel</strong></a>
+      <a type="button" class="button round-corners"><strong>OK</strong></a>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div> 
+    <!-- pop-up end -->
+
+    <div id="wrapper">
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div> 
+          
+<!-- breadcrumbs go below -->  
+    <div id="content" class="admin-area-background">
+    <div class="breadcrumbs-row-color">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav area-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Assessments</a></li>
+              <li><span class="show-for-sr">Current: </span>New Challenge 2.0 - Version 1</li>
+            </ul>
+          </nav> 
+        </div>
+      </div>
+    </div>   
+
+<!-- tabs go below --> 
+  
+
+    <div class="row">
+      <ul class="tabs" data-tabs id="header-menu">
+        <li class="tabs-title"><a href="#panel1">Users</a></li>
+        <li class="tabs-title is-active"><a href="#panel2" area-selected="true">Course Manager</a></li>
+        <li class="tabs-title"><a href="#panel3">Assessments</a></li>
+        <li class="tabs-title"><a href="#panel4">Tutorials</a></li>
+      </ul> 
+    </div>
+
+    <div class="row">
+      <div class="tabs-content" data-tabs-content="header-menu">
+        <div class="tabs-panel" id="panel1"></div>
+        <div class="tabs-panel" id="panel2"></div>
+        <div class="tabs-panel is-active" id="panel3">
+          <div class="row">
+            <div class="large-10 columns"><h4>New Challenge 2.0 - Introduction to Art History</h4></div>
+            <div class="large-2 columns"><p style="text-transform:uppercase; color:#0000ff; font-size:32px;">draft</p></div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="course-details-wrapper">
+                <h4>GENERAL INFORMATION</h4>
+                <label>Assessment type: Challenge 2.0</label>
+                <p><strong>Version 1</strong></p>
+                <label>VERSION DESCRIPTION
+                 <textarea rows="3" cols="5" style="background-color:white"></textarea>
+                </label>
+              </div>
+
+            </div>
+            <div class="large-4 columns">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="course-details-wrapper">
+                <div style="position:absolute;"><h4>CONCEPTS</h4></div>
+                <br>
+                <div>
+                  <input type="text" style="width:50%; float:left; margin-right:10px;">
+                  <button type="button" class="button small round-corners" style="margin-top:2px;"><strong>Add Concept</strong></button>
+                </div>
+                  <ul id="sortable" class="sortable_list">
+                    <li>College Algebta for High School<span class="edit_challenge_concept"><a href="#">edit</a></span><span class="remove_concept_from_challenge"><a data-open="remove_concept_from_challenge2">&times</a></span></li>
+                    <li class="edit_challenge_concept_name">
+                      <input type="text" style="width:50%; float:left; margin-right:10px;">
+                      <button type="button" class="button small round-corners" style="margin-top:2px;"><strong>Save</strong></button>
+                      <button type="button" class="button small secondary round-corners cancel_edit_challenge_concept" style="margin-top:2px;"><strong>Cancel</strong></button>
+                    </li>
+                    <li>Human Biology in Everyday Life<span class="edit_challenge_concept"><a href="#">edit</a></span><span class="remove_concept_from_challenge"><a data-open="remove_concept_from_challenge2">&times</a></span></li>
+                    <li>Introduction to Adult Learning for interesting people<span class="edit_challenge_concept"><a href="#">edit</a></span><span class="remove_concept_from_challenge"><a data-open="remove_concept_from_challenge2">&times</a></span></li>
+                  </ul>
+                  <!-- <table style="width:80%;" id="sortable">
+                    <tr>
+                      <td><a href="">College Algebta for High School</a></td>
+                      <td><a data-open="remove_concept_from_challenge2">x</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="">Human Biology in Everyday Life</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">College Algebta for High School</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">Human Biology in Everyday Life</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">College Algebta for High School</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">Human Biology in Everyday Life</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">College Algebta for High School</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">Human Biology in Everyday Life</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">College Algebta for High School</a></td>
+                      <td>x</td>
+                    </tr>
+                    <tr>
+                      <td><a href="">Human Biology in Everyday Life</a></td>
+                      <td>x</td>
+                    </tr>
+                  </table> -->
+              </div>
+            </div>
+            <div class="large-4 columns">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="large-3 columns clearfix" style="position:relative">
+              <button type="button" class="button secondary round-corners" style="margin-right:10px;"><strong>Cancel<strong></button>
+              <button type="button" class="button round-corners"><strong>&nbsp&nbsp&nbspSave&nbsp&nbsp</strong></button>
+            </div>
+          </div>
+        </div>
+        <!-- active panel -->
+        <div class="tabs-panel" id="panel4"></div>
+      </div>
+      <!-- tabs content -->
+    </div>
+    <!--row with tabs content -->
+  </div>
+  <!-- #content -->
+  
+    <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- #wrapper --> 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>

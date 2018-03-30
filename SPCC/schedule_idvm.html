@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <!-- <script src="../foundation/bower_components/modernizr/modernizr.js"></script>-->
+  </head>
+  
+  <body>
+  <div id="wrapper">
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div>
+    <!-- #header -->
+    <div id="content">
+    <div class='full-screen'>
+      <div class="row">
+        <div class="large-12 text-center columns">
+            <h2>Schedule Your ID Verification</h2>
+        </div>
+      </div>
+    </div>
+       
+     <div class='row'>
+      <div class='small-1 large-2 columns'>&nbsp;</div>
+      <div class='small-10 large-8 columns'>
+          <div class='row'>
+              <div class='small-6 large-4 text-center columns'>
+                <img src='../img/icon_medium.png' alt='icon'>
+              </div>
+              <div class='small-6 large-8 columns'>
+                <p>Choose a date and time to take your ID Verification Milestone. There are three options. Lorem ipsum.</p>
+                <p>Get more information about the ID Verification Milestone proctoring process and rules in the <a href='www.sophia.org'>Student Guide</a>.</p>
+              </div>
+          </div>  
+      </div>
+      <div class='small-1 large-2 columns'>&nbsp;</div>
+     </div> 
+
+     <div class='row'>
+      <div class='large-4 columns'>
+        <div class='callout panel'>
+          <p align='center'>OPTION A: TAKE IT<br>COST: Free</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 3 days in advance.</p>
+
+          <form action="/echo" method="post" enctype=multipart/form-data>
+            <label><strong>Select a Date</strong></label>
+            <img src='../img/calendar.png'><br>
+            <label><strong>Select a Time</strong></label>
+            <select name="CHOOSE YOUR EXAM TIME">
+              <option value='8 oclock'>8 p.m.</option>
+              <option value='9 oclock'>9 p.m.</option>
+            </select> 
+
+            <p><a data-open="schedule_idvm_modal" class="expand round button">Schedule IDVM</a></p>
+            <div class="reveal" id="schedule_idvm_modal" data-reveal>
+                  <h2 >Almost done!</h2>
+                  <p class='lead'>Are you sure that you want to schedule your IDVM?</p>
+                  <p>This is the last thing to do here.</p>
+                  <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div> 
+          </form>         
+        </div> 
+      </div>
+
+       <div class='large-4 columns'>
+        <div class='callout panel'>
+          <p>OPTION A: TAKE IT<br>COST: $5</P>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 3 days in advance.</p>  
+          <form>
+            <label><strong>Select a Date</strong></label>
+            <img src="../img/calendar.png" />
+            <label>Select a Time
+              <select name='set a time'>
+                <option value='10 oclock'>10 p.m.</option>
+                <option value='11 oclock'>11 p.m.</option>
+              </select>
+            </label>
+             <p><a data-open="schedule_idvm_modal_1" class="expand green round button">Schedule IDVM</a></p>
+             <div class="reveal" id="schedule_idvm_modal_1" data-reveal>
+              <h2>Hey Ho Ho!</h2>
+              <p class="lead">Please schedule IDVM now.</p>
+              <p>Have a good day today.</p>
+              <button class="close-button" data-close aria-label="close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+             </div>
+
+          </form>
+        </div>
+      </div>
+      
+      
+       <div class='large-4 columns'>
+        <div class='callout panel'>
+          <p>OPTION A: TAKE IT</p>
+          <P>COST: Free</P>
+        </div>  </div>
+     </div>
+    </div>
+    <!-- #content -->
+    <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer --> 
+  </div>
+  <!-- #wrapper -->  
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>

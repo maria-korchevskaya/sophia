@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/content-area-styles.css"/>
+  </head>
+  
+  <body>
+  <div id="wrapper">  
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div> 
+    <!-- #header -->      
+    <div id="content" class="admin-area-background">
+    <!-- breadcrumbs go below -->  
+    <div class="breadcrumbs-row-color">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav area-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Course Manager</a></li>
+              <li><span class="show-for-sr">Current: </span>Edit Course</li>
+            </ul>
+          </nav> 
+        </div>
+      </div>
+    </div>   
+
+<!-- tabs go below --> 
+    <div class="row">
+      <ul class="tabs" data-tabs id="header-menu">
+        <li class="tabs-title"><a href="#panel1">Users</a></li>
+        <li class="tabs-title is-active"><a href="#panel2" area-selected="true">Course Manager</a></li>
+        <li class="tabs-title"><a href="#panel3">Assessments</a></li>
+        <li class="tabs-title"><a href="#panel4">Tutorials</a></li>
+      </ul> 
+    </div>
+
+    
+    <div class="row">
+      <div class="tabs-content" data-tabs-content="header-menu">
+        <div class="tabs-panel" id="panel1"></div>
+
+        <!-- active tab -->
+        <div class="tabs-panel is-active" id="panel2">
+          <div class="row">
+            <div class="large-12 columns">
+              <h2>Edit Course</h2>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="row">
+                <div class="large-10 columns">
+                  <form action="www.sophia.org" enctype="form-data" method="post">
+                    <label> Course Name
+                      <input type="text">
+                    </label>
+                    <label> Course ID
+                      <input type="text" placeholder="25">
+                    </label>
+                    <fieldset>
+                      <label>Course Type</label>
+                      <input type="radio" name="course_type" value="credit" id="course_type_credit"><label for="course_type_credit">CREDIT</label><br>
+                      <input type="radio" name="course_type" value="ceu" id="course_type_ceu"><label for="course_type_ceu">CEU/CREDIT</label>
+                    </fieldset>
+                    <label> Short Description
+                      <textarea rows="3" placeholder="None"></textarea>
+                    </label>
+                    <label> Long Description
+                      <textarea rows="5" placeholder="Adult Learning Theory Course helps you to focus on developing the skill of integrating adult learning theory and current research-based best practices into professional development program planning. You will evaluate how to facilitate professional learning and professional development using the six principles of adult learning theory."></textarea>
+                    </label>
+                    <label> B2B Facing Description
+                      <textarea rows="4">placeholder</textarea>
+                    </label>
+                    <label> Contact Hours
+                      <input type="text" placeholder="Contact Hours">
+                    </label>
+                    <div class="course-details-wrapper">
+                      <h4>Course Details</h4><br>
+                      <label style="margin-right:-10px;"> Syllabus
+                        <textarea rows="5">This Adult Learning Theory Course uses problem-based learning that shows you how to apply your knowledge in real­-world situations. Our Many Ways™ learning model features multiple teachers and various instructional styles for each concept so you can find a style that meshes with your individual learning preference. This rich, immersive experience helps you better understand and retain information, for an all-around smarter way to learn.</textarea>
+                      </label>
+                        <label>Upload Syllabus PDF</label>
+                        <input type="file" value="Upload">
+                        <label>Upload Description Image</label>
+                        <input type="file" value="Upload"> 
+                      <h5>Benefits</h5>
+                      <label>Jump-start your education
+                        <textarea rows="3">Available anytime, from any device, our self-paced classes help you build and assess skills without extra busywork.</textarea>
+                      </label>
+                      <label>Stay on budget
+                        <textarea rows="3">Available anytime, from any device, our self-paced classes help you build and assess skills without extra busywork.</textarea>
+                      </label>
+                      <label>Get immersed in learning
+                        <textarea rows="3">Available anytime, from any device, our self-paced classes help you build and assess skills without extra busywork.</textarea>
+                      </label>
+                    </div>
+                      <label>Upload Course Image (optional)
+                        <input type="file" value="upload">
+                      </label>
+                      <label>Upload Video Image (optional)
+                        <input type="file" value="upload">
+                      </label>
+                      <label>Orientation Video (optional)
+                        <input type="file" value="upload">
+                      </label>
+                      <label>Orientation Video Description (optional)
+                        <textarea rows="3"></textarea>
+                      </label>
+                      <label>Milestone Tips (optional)
+                        <textarea rows="5"></textarea>
+                      </label>
+                      <label>IDVM Tips (optional)
+                        <input type="file" value="upload">
+                        <p class="help-text alert callout" id="idvm_tips_error" >The file has wrong format. Only .mp4 is allowed.</p>
+                        <span class="alert label"><i class="fi-x-circle"></i>The file has wrong format. Only .mp4 is allowed.</span>
+                      </label>
+                      <label>Certificate Form PDF (optional)
+                        <input type="file" value="upload">
+                      </label>
+                  </form><br>
+                </div>
+                <div class="large-2 columns">&nbsp;</div>
+              </div> 
+              <div class="row">
+                <div class="medium-6 columns">
+                  <button type="button" class="f-button blue">Save&nbsp;&nbsp;</button>
+                  <button type="button" class="f-button grey">Cancel</button>
+                </div> 
+                <div class="medium-6 columns">&nbsp;</div> 
+              </div>  
+              
+
+
+            </div>
+
+            <!-- the right page column -->
+            <div class="large-4 columns">
+              <div class="row>">
+                <div class="small-3 columns"><label class="float-right">Availability:</label></div>
+                <div class="small-9 columns">
+                  <select>
+                    <option value="draft">Draft</option>
+                    <option value="available">Available</option>
+                    <option value="closed">Closed</option>
+                    <option value="trial">Trial</option>
+                  </select> 
+                </div> 
+              </div>   
+              <div class="row">
+                <div class="small-12 columns">
+                  <p>NOTE: Once you set your title to Trial or Available from Draft you must have all pieces of the title in place. This includes all: competencies, challenges, milestones and touchstone. This is because you will <strong>not</strong> be able to edit these things once the title is in Trial or Available, <strong>and</strong> you cannot make a title Draft once you've made it Available or Trial.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="tabs-panel" id="panel3"></div>
+        <div class="tabs-panel" id="panel4"></div>
+      </div>
+   </div>
+
+</div>
+<!-- #content -->
+   <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+  </div>
+  <!-- #wrapper -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>> 
+</html>

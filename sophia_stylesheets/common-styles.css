@@ -1,0 +1,265 @@
+/* THIS IS THE DOCUMENT WITH COMMON PAGES STYLES */
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'Roboto', sans-serif; /* this is for pages that do not have the link to Oxygen */
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* header, content, footer containers */ 
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+#header {
+    height:123px;
+    background-color: black;
+    padding:5px;
+}
+
+#content {
+    padding-bottom: 100px;
+}
+
+#footer {
+    background-color: #303335;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+    .box {
+        width: 800px;
+        margin:auto;
+    }
+    #footer p {
+        font-size: 13px;
+        margin-top: 10px;
+        color:  #ffffff;
+        text-align: center;
+    }       
+
+.clearfix:after {
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+.error-page-font {
+        color: #fff;
+        text-align: center;
+}
+
+.round {
+    border-radius: 4px;
+}
+
+.top-bar ul {
+    background-color: black;
+}
+
+/* .top-bar-left {
+    background-color: #0a0a0a;
+} */
+
+.admin-area-background {
+    background-color: #f0f0f0;
+}
+
+/* BUTTONS */
+
+.button.round-corners {
+    border-radius: 4px; /* This is for big foundation buttons, because foundation class="round"
+    has too big border-radius */
+}
+
+.right-save-button {
+	float:right;
+	background: transparent;
+	line-height: 1;
+	border: 1px solid transparent;
+	border-radius: 5%;
+	display: inline-block;
+	text-align: center;
+	cursor:pointer;
+	vertical-align: middle;
+	background-color: #2199e8;
+	color: #fff;
+	font-size: 14px;
+	padding: 0.85em 1em;
+  	margin: 0 1rem 1rem 0;
+}
+	  .right-save-button:hover, .right-save-button:focus {
+	    background: #1583cc;
+	    color: #fff; 
+	}
+
+.f-button {
+    line-height: 1;
+    border-radius: 4px;
+    cursor: pointer;
+    padding:0.55556em 1.11111em;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+    .f-button.blue {
+        border: 1px solid #0985e1;
+        background-color: #29adf8;
+        color: #fff;
+        background-size: 100%;
+    }
+
+    .f-button.white {
+        border: 1px solid #0985e1;
+        background-color: white;
+        color: #29adf8;
+        background-size: 100%
+    }
+
+    .f-button.grey {
+    	border: 1px solid #eaeaea;
+    	color: #303335;
+   		background: #f4f4f4;
+   		background-size: 100%;
+    }
+
+        .f-button.grey.gradient {
+            background: #f5f6f6; /* Old browsers */
+            background: -moz-linear-gradient(top, #f5f6f6 0%, #dbdce2 19%, #b8bac6 57%, #dddfe3 80%, #f5f6f6 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #f5f6f6 0%,#dbdce2 19%,#b8bac6 57%,#dddfe3 80%,#f5f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #f5f6f6 0%,#dbdce2 19%,#b8bac6 57%,#dddfe3 80%,#f5f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
+
+    .f-button.dark-grey {
+    	border: 1px solid #a6a6a6;
+        color: #303335;
+    	background: #a9a9a9;
+    }
+
+
+    .f-button.upload-button {
+        padding: 8px 15px 8px 15px;
+        font-weight: bold;
+        float: left;
+    }
+
+    .f-button.small {
+    	font-size:14px;
+    } 
+
+    .f-button.tiny {
+        font-size: 12px;
+        padding: 1px,3px;
+    }
+
+.form-buttons {
+    margin-top: 25px;
+}   
+
+    .form-buttons a {
+        margin-right: 10px;
+    }
+
+/* END OF BUTTONS */        
+
+.one-line-divs {
+    float: left;
+    border: none;
+    text-align: center;
+    list-style: none;
+    padding: 5px 8px 5px 8px;
+    overflow: hidden;
+} 
+
+    .one-line-divs:hover {
+        background: #1c9def;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }  
+
+    .one-line-divs li {
+        font-size: 13px;
+        color: #444;
+        display: inline-block;
+    } 
+
+.padding-left {
+    padding-left: 15px;
+}
+
+.padding-right {
+    padding-right: 15px;
+}
+
+.padding-bottom {
+    padding-bottom:10px;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.padding-top-big {
+    padding-top: 20px;
+}
+
+.titles-font {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li.name {
+    background-color: #0a0a0a; /* the style for the top-bar area */
+}  
+
+.separator {
+    background-color: white;
+    height: 50px;
+}
+
+.bottom-line {
+    border-bottom: solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+    .bottom-line p {
+    float: right;
+} 
+
+.admin-table {
+    font-size: 13px;
+    text-align: left;
+}
+
+  .admin-table th {
+    background-color: #303335;
+    color: #fff;
+    line-height: 1;
+    vertical-align: middle;  
+  }
+
+  table.admin-table tbody tr:nth-child(even) {
+    background-color: #fff;
+
+  }
+  table.admin-table tbody tr {
+    border-bottom: 1px solid #cccccc;
+    max-width: 100px;
+  }
+
+select.13-font option {
+    font-size: 13px;
+}
+
+.grey-panel {
+    background-color:#f6f6f6;
+    border:solid 1px #dfe0e4;
+}
+
+

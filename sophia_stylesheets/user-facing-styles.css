@@ -1,0 +1,317 @@
+.round {
+	border-radius: 4px;
+}
+
+.skippy-sharp-copy {
+    font-family: Skippy;
+    font-size: 1.3em;
+}
+
+.top-bar-left input {
+	width:350px;
+}
+
+.top-bar .menu {
+	background-color:black;
+	height:80px;
+    margin-left: 150px;
+}
+
+.dropdown.menu .has-submenu a::after {
+    float: right;
+    margin-top: 10px;
+    margin-left: -50px;
+
+}
+
+.dropdown.menu .has-submenu {
+  position: relative; }
+
+  .dropdown.menu .has-submenu a::after {
+    /*float: right; */
+    margin-top: 5px;
+    margin-left: 1px; }
+
+
+  .dropdown.menu .has-submenu.is-down-arrow a {
+    padding-right: 10px;
+    position: relative; }
+  .dropdown.menu .has-submenu.is-down-arrow > a::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10px; /* Положение треугольника */
+    right: 5px;
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid white; /* Добавляем треугольник */  }
+
+.top-bar-right {
+	width: 250px;
+    margin-right: 100px;
+} 
+    
+
+.breadcrumbs-container {
+    background-color: #404042;
+    display: block;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs {
+    display:block;
+    height: 17px;
+    border:none;
+    margin-left: 50px
+}
+
+    .breadcrumbs li {
+        font-size:13px;
+        text-transform: none;
+        font-weight: bold;
+        color: white;
+    }
+
+        .breadcrumbs li:not(:last-child)::after {
+            content: ">";
+        }
+
+    .breadcrumbs > * {
+        color:#FFFFFF;
+     }
+
+    .breadcrumbs > * a {
+          color: #FFFFFF;
+          cursor: default;
+          margin-left: 10px;
+     }
+
+    .current {
+        text-decoration: underline;
+        color: #FFFFFF;
+        font-size:13px;
+     }
+
+
+.profile_arrow {
+    background: black;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+   }
+
+   .profile_arrow::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: -20px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid green; /* Добавляем треугольник */ 
+    }
+
+.assessment-header {
+    border-bottom: solid 1px #eaeaea;
+    background: #f6f6f6;
+    color: #303335;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+} 
+
+    .milestone-score-wrapper {
+        border: solid 2px #eaeaea;
+    }   
+
+/* styles for the tutorial page */
+
+.many-ways-bar {
+    height: 60px;
+    border-bottom: 1px solid #dfe0e3
+}
+
+.tutorial-publishing-title {
+    border-right: #dfe0e3 1px solid;
+    margin-left: 60px;
+}
+
+    .tutorial-publishing-title h6 {
+        font-size: 0.9em;
+        font-family: Helvetica, sans-serif;
+        text-transform: uppercase;
+        margin: 0 0 0;
+    }
+
+    .tutorial-publishing-title span {
+        font-family: Skippy;
+        font-size: 1.3em;
+    }
+
+.large-8.columns.tutorial-publishing-settings {
+    width: 600px;
+    padding-top: 10px;
+}
+    .tutorial-publishing-settings label {
+            font-size: 16px;
+    }
+
+.tutorial-heading-wrapper {
+    background-color: #f6f6f6;
+    margin-top: 9px;
+    height: 280px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 60px;
+    overflow: hidden;
+}
+   
+   /* .tutorial-heading-wrapper img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2px;
+    } */
+
+.tutorial-section-wrapper {
+    border: 1px solid #2199e8;
+    border-radius: 1%;
+    padding: 15px;
+    overflow: hidden;
+} 
+
+    .tutorial-section-wrapper textarea {
+        resize: none;
+    }
+
+   /* .tutorial-section-wrapper span {
+        position: relative;
+        float: left;
+        padding: 5px;
+        bottom: 17px;
+
+    } */
+
+    .tutorial-section-wrapper span {
+        position: relative;
+        float: left;
+        bottom: 50px;
+        left: 7px;
+        border-top: 1px solid #cccccc;
+        width: 520px;
+    } 
+
+#overlay {
+  background: white;
+  width: 200px;
+  height:100px;
+  display:none;
+  text-align:center;
+} 
+
+    #overlay p {
+        color: black;
+    }
+
+    #overlay img {
+        margin-top: 10%;
+    }
+
+.bottom-line {
+    border-bottom: solid 1px #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}    
+ 
+.tutorial-heading-wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.tutorial-heading-link-edit {
+    display: inline-block;
+    font-size: 14px;
+    font-size: Helvetica;
+    font-weight: bold;
+    padding: 8px 55px 8px 50px;
+    margin-bottom: 15px;
+}
+
+   /* .tutorial-heading-link-edit span {
+        margin-right: 20px;
+        background: 
+    } */
+
+.actions-menu {
+    display: inline-block;
+    font-size: 14px;
+    font-size: Helvetica;
+    font-weight: bold;
+    padding: 8px 20px 8px 20px;
+    margin-bottom: 10px;
+}
+
+.share-bar {
+    margin-top: 100px;
+}
+
+.tutorial-heading-details h3 {
+    font-family: "droid_serifregular", Times, "Times New Roman", serif;
+}
+
+    .tutorial-heading-details p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+.upload-image-wrapper {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 10px 10px 15px 10px;
+    overflow: hidden;
+}  
+
+    .upload-image-wrapper_left {
+        float: left;
+    }
+
+    .upload-image-wrapper_right {
+        float: right;
+        margin-right: 260px;
+    }
+
+        .upload-image-wrapper_right h4 {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .upload-image-wrapper p {
+            font-size: 13px;
+        }
+
+.tutorial-quiz p {
+    text-align: center;
+
+}
+
+.callout {
+    background: #fefefe;
+    padding: 5px 8px 5px 8px;
+}
+
+.profile-table {
+    border-collapse: separate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    

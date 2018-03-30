@@ -1,0 +1,178 @@
+/* These are styles for the button 'Add Point' on edit concept page */
+
+.key_point_field {
+	margin-top: 20px;
+}
+
+	.key_point_field ul {
+		list-style-position: inside;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.key_point_field input[type="text"] {
+		display: inline-block;
+		width: 600px;
+	}
+
+	.key_point_field li {
+	   padding-left: 0;
+
+	}
+
+	a.remove-link {
+	    display: inline-block;
+	    vertical-align: bottom;
+	    margin-left: 10px;
+	    margin-bottom: 10px;
+	}
+
+.concept-content-details {
+	background-color: #0985e1;
+	border: 1px solid #0985e1;
+	padding: 10px;
+	position: relative;
+}
+   /* .concept-content-details p {
+    	position: absolute;
+    	top: -25px;
+    	margin-left: 0;
+    } */
+
+.markup-toolbar {
+	position: relative;
+}
+	.markup-toolbar ul {
+		position: absolute;
+		width: 100%;
+		right:0px;
+	}
+
+/* styles for the accordion menu */
+
+.menu.vertical>li.shared_fact_title {
+	border: 1px solid #e6e6e6;
+	font-size: 14px;
+	color: #150805;
+}
+
+	.menu.vertical>li.shared_fact_title:hover {
+		background-color: #BDC3C7;
+	}
+
+
+	.menu.vertical>li.is-active.shared_fact_title {
+		background-color: #BDC3C7;
+	}
+
+	.menu.vertical li>a:hover {
+        color: black;
+	}
+
+	.menu.vertical li>a {
+		color: black;
+	}
+
+.menu.vertical>li.shared_fact_title:not(:last-child) {
+	border-bottom: none;
+}
+
+.shared-fact-title>* {
+	color: black;
+}
+
+ul.menu.vertical.nested.shared_fact_content dl {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+ul.menu.vertical.nested.shared_fact_content dd {
+	font-size: 13px;
+}
+
+.shared_fact_item {
+	display: inline-block;
+}
+
+.edit_remove {
+	display: none;
+}
+
+.shared_fact_item:hover .edit_remove {
+	display: inline-block;  
+}
+
+.showme{ 
+display: none;
+}
+.showhim:hover .showme{
+display : block;
+}
+
+.sortable_list {
+	list-style: none;
+	margin:0;
+	padding:0;
+	width: 85%;
+}
+
+	.sortable_list li {
+		margin-top: 5px;
+		background-color: #D8CEF6;
+		padding: 10px;
+		font-size: 15px;
+		font-family: Roboto;
+		position: relative;
+	}
+
+	.sortable_list li:last-child {
+		margin-bottom: 20px;
+	}
+
+	.remove_concept_from_challenge {
+		position: absolute;
+		right: 10px;
+
+	}
+.edit_challenge_concept {
+	display: none;
+	margin-left: 10px;
+}	
+
+.edit_challenge_concept_name {
+	display: none;
+}
+
+  .edit_challenge_concept_name button {
+  	margin-bottom: 8px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/user-facing-styles.css"/>
+    <!-- <script src="../foundation/bower_components/modernizr/modernizr.js"></script> -->
+  </head>
+  
+  <body>
+  <div id="wrapper">  
+    <div class="top-bar" id="header">
+        <div class="top-bar-left">
+          <ul class="title-area one-line-divs">
+            <li class="name"> 
+              <h1><a href="www.dev-maria/homepage"><img src="../img/homepage-icon.png"></a></h1>
+            </li>
+            <li>
+              <a href="#"><img src="../img/magic-menu.png"></a>
+            </li>
+            <li><input type="search" placeholder="Search" class="round"></li>
+          </ul> 
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li><img src="../img/avatar.png"></li>
+            <li class="has-submenu">
+              <a href="#" class=""></a>
+              <ul>
+                <li>Profile</li>
+                <li>Sign Out</li>
+              </ul>
+            </li>
+          </ul>
+        </div>  
+    </div> 
+    <!-- #header -->      
+    <div id="content">
+    <!-- breadcrumbs go below -->  
+      <div class="breadcrumbs-container" >
+          <div class="row">
+            <div class="large-12 columns">
+              <nav area-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#"><img src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/breadcrumbs-home.png"></a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><span class="show-for-sr">Current: ></span>Upload Image</li>
+                </ul>
+              </nav> 
+            </div>
+          </div>
+      </div>  
+
+      <!-- Many Ways bar -->
+      <div class="many-ways-bar">
+          <div class="row">
+            <div class="large-3 columns tutorial-publishing-title">
+              <h6>Publishing Settings</h6>
+              <span>Tell us who can see your tutorial</span>
+            </div>
+            <div class="row">
+              <div class="large-8 columns tutorial-publishing-settings">
+                <form autocomplete="off" method="post" action="#">
+                  <fieldset>
+                      <input type="radio" name="publishing" id="packet-publisher" value="unpublished" checked="checked">
+                      <label for="packet-publisher">Unpublished</label>
+                      <input type="radio" name="publishing" id="publish-to-the-world" action="#" method="post">
+                      <label for="publish-to-the-world">Published to the World</label>
+                      <input type="radio" name="publishing" id="publish-to-a-group" action="#" method="post">
+                      <label for="publish-to-a-group">Published to a Group</label>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Tutorial Heading with share bar -->
+      <div class="tutorial-heading-wrapper">
+        <div class="row">
+          <div class="large-2 columns"><img src="http://placehold.it/200x200" class="round"></div>
+          <div class="large-7 columns tutorial-heading-details">
+            <h3>This tutorial is Awesome!</h3>
+            <p><strong>RATING  ★★★★★ </strong><a href="#"><strong>(5)</strong></a></p>
+            <p><strong>AUTHOR</strong><a href="#"> Maria Korchevskaya</a></p>
+            <p><strong>DESCRIPTION</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a href="#"><strong>See More +</strong></a></p>
+          </div>
+          <div class="large-3 columns text-right">
+            <a href="#" class="tutorial-heading-link-edit f-button blue"><span></span>Edit</a>
+            <a href="#" class="actions-menu f-button white">Other Actions</a>
+            <div class="share-bar"><img src="http://placehold.it/350x50" caption="SHARE BAR"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tutorial content -->
+
+      <div class="tutorial-content">
+        <div class="row">
+          <div class="large-6 columns">
+            <h6 class="bottom-line"><strong>TUTORIAL</strong></h6><br>
+            <h1 style="text-align:center;"><a href="#">+</a></h1>
+            
+            <div class="tutorial-section-wrapper">
+              <input type="text" placeholder="Title (Optional)" class="round">
+                
+              <div class="upload-image-wrapper">
+                <textarea rows="5" class="round"></textarea>
+              </div>
+                <!-- <span><img src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/image-upload-icon.png"></span> upload image icon, do not need it in this release. -->
+              
+              <!-- The upload image functionality, similar to upload chapter markers for text sections -->
+              <div class="upload-image-wrapper">
+                <div class="upload-image-wrapper_left"><img src="http://placehold.it/30x30"></div>
+                <div class="upload-image-wrapper_right">
+                  <h4>Upload Image</h4>
+                  <p>Supported file types: .png, .jpg., .gif.</br>Max image size: 5MB.</p>
+                </div>
+                <div><a href="#" class="f-button blue upload-button">Choose File</a></div>
+              </div>  
+
+              <input type="text" placeholder="Cite Source" class="round">
+
+              <button type="button" class="round f-button grey button float-right"><strong>Cancel<strong></button>
+              <button type="button" class="round f-button blue float-right"><strong>&nbsp;Save&nbsp;</strong></button>
+              <h1 style="text-align:center;"><a href="#">+</a></h1>
+            </div> 
+          </div>
+          <!-- Quiz sextion -->
+          <div class="large-6 columns">
+            <h6 class="bottom-line"><strong>QUIZ</strong></h6><br>
+            <h1 style="text-align:center;"><a href="#">+</a></h1>
+            <div class="tutorial-quiz"> <p class="skippy-sharp-copy">Quizzes make tutorials better! Start here.</p></div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      </div>
+    <!-- #content -->
+    <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../foundation/js/foundation.min.js"></script>
+    <script src="../foundation/js/app.js"></script>
+    <script type="text/javascript" src="../javascript/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </div>
+  <!-- #wrapper -->
+  </body> 
+</html>   

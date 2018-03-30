@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiered Discounts</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/9871d9230b.js"></script>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/SPCC-area-styles.css"/>
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div class="top-bar" id="header">
+        <div class="top-bar-left">
+          <ul class="title-area">
+            <li class="name"> 
+              <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+            </li>  
+          </ul> 
+        </div>  
+      </div> 
+      <!-- #header -->
+      <div id="content" class="admin-area-background">
+        <div class="breadcrumbs-row-color">
+          <div class="row">
+            <div class="large-12 columns">
+              <nav area-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home</a></li>
+                  <li><span class="show-for-sr">Current: </span>Tiered Discounts</li>
+
+                </ul>
+              </nav> 
+            </div>
+          </div>
+        </div>   
+        <!-- tabs go below --> 
+        <div class="row">
+          <ul class="tabs" data-tabs id="header-menu">
+            <li class="tabs-title"><a href="#panel1">SP Students</a></li>
+            <li class="tabs-title"><a href="#panel2">Promo Codes</a></li>
+            <li class="tabs-title"><a href="#panel3">SP Class View</a></li>
+            <li class="tabs-title"><a href="#panel3">SP Notifications</a></li>
+            <li class="tabs-title is-active"><a href="#panel4" area-selected="true">Tiered Discounts</a></li>
+            <li class="tabs-title"><a href="#panel5">Section Manager</a></li>
+            <li class="tabs-title"><a href="#panel6">Transferman Partners</a></li>
+          </ul> 
+        </div>
+        <div class="row">
+          <div class="tabs-content" data-tabs-content="header-menu">
+              <div class="tabs-panel" id="panel1"></div>
+              <div class="tabs-panel" id="panel2"></div>
+              <div class="tabs-panel" id="panel3"></div>
+              <div class="tabs-panel is-active" id="panel4" style="margin-left:20px;">
+                <div>
+                  <a class="btn btn-default btn-sm" href="#" data-open="new_lc_notification">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp; New Discount</a>
+                </div><br>
+                <table class="admin-table hover">
+                  <tr>
+                    <th>Title</th>
+                    <th>Calculation type</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Program</th>
+                    <th>Active</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td>3 courses discount</td>
+                    <td>Percent</td>
+                    <td>3</td>
+                    <td>50%</td>
+                    <td>College Courses</td>
+                    <td>yes</td>
+                    <td><a href="#">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>3 courses discount</td>
+                    <td>Percent</td>
+                    <td>3</td>
+                    <td>50%</td>
+                    <td>College Courses</td>
+                    <td>no</td>
+                    <td><a href="#">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>3 courses discount</td>
+                    <td>Percent</td>
+                    <td>3</td>
+                    <td>50%</td>
+                    <td>Capella</td>
+                    <td>yes</td>
+                    <td><a href="#">Edit</a></td>
+                  </tr>
+                </table>
+
+              </div>
+            <!-- not active tabs -->
+              
+              <div class="tabs-panel" id="panel5"></div>
+              <div class="tabs-panel" id="panel6"></div>
+              <!-- end -->
+          </div>
+        </div>    
+      </div>
+      <!-- #content -->
+      <div id="footer">
+        <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+        </div>
+      </div>
+      <!-- #footer -->
+    </div>
+    <!-- #wrapper -->  
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>
+    

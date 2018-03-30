@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <!-- <script src="../bower_components/modernizr/modernizr.js"></script> -->
+  </head>
+
+  <body>
+  <div id="wrapper">
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div> 
+    <!-- #header -->
+    <div id="content" class="admin-area-background">      
+    <!-- breadcrumbs go below -->  
+    <div class="breadcrumbs-row-color">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav area-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Program Manager</a></li>
+              <li><span class="show-for-sr">Current: </span>Edit Program</li>
+            </ul>
+          </nav> 
+        </div>
+      </div>
+    </div> 
+
+    <!-- tabs go below --> 
+    <div class="row">
+      <ul class="tabs" data-tabs id="header-menu">
+        <li class="tabs-title"><a href="#panel1">Users</a></li>
+        <li class="tabs-title"><a href="#panel2">Abuse</a></li>
+        <li class="tabs-title"><a href="#panel3">Announcement</a></li>
+        <li class="tabs-title"><a href="#panel4">Taxonomy Manager</a></li>
+        <li class="tabs-title"><a href="#panel5">Settings</a></li>
+        <li class="tabs-title is-active"><a href="#panel6" area-selected="true">Program Manager</a></li>
+        <li class="tabs-title"><a href="#panel7">Opt-out lists</a></li>
+        <li class="tabs-title"><a href="#panel8">Proactive Caching</a></li>
+        <li class="tabs-title"><a href="#panel9">Redirect Manager</a></li>
+        <li class="tabs-title"><a href="#panel10">Flex Page Builder</a></li>
+      </ul> 
+    </div>  
+
+    <div class="row">
+      <div class="tabs-content" data-tabs-content id="header-menu">
+        <div class="tabs-panel" id="panel1"></div>
+        <div class="tabs-panel" id="panel2"></div>
+        <div class="tabs-panel" id="panel3"></div>
+        <div class="tabs-panel" id="panel4"></div>
+
+        <!-- active tab -->
+        <div class="tabs-panel is-active" id="panel5">
+            <div class="row">
+                <div class="large-12 columns">
+                    <p><img width="30px" height="30px" src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/back-arrow.png" alt="Стрелочка">&nbsp;<a href="homepage.html">Back to Program Manager</a></p>
+                    <h3>Edit Program</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- left column -->
+                <div class="large-8 columns">
+                    <div class="row">
+                    <!-- чтобы внутри секции был отступ справа -->
+                        <div class="large-10 columns program-details-wrapper">
+                            <form action="#" enctype="form-data" method="post">
+                                <label for="program_name" class="admin-area-field-label">Program Name</label>
+                                <input type="text" id="program_name" class="round">
+                                <label class="admin-area-field-label">Program Type: Student Success partner</label>
+                                <br>
+                                <label for="external_partner_name" class="admin-area-field-label">External Partner Name</label>
+                                <input type="text" id="external_partner_name" class="round">
+                                <label for="external_partner_email" class="admin-area-field-label">External Partner Email</label>
+                                <input type="text" id="external_partner_email" class="round">
+                                <label for="program_description" class="admin-area-field-label">Program Description</label>
+                                <textarea type="text" id="program_description" rows="5" class="round"></textarea>
+                                <label for="homebase_description" class="admin-area-field-label">Homebase Description</label>
+                                <textarea type="text" id="homebase_description" rows="5" class="round"></textarea>
+                                <label for="homebase_message" class="admin-area-field-label">Homebase Message</label>
+                                <textarea type="text" id="homebase_message" rows="3" class="round"></textarea>
+                                <label class="admin-area-field-label">Program Logo</label>
+                                <input type="file">
+                                <p class="admin-hint">Hint: PNG extension required.</p>
+                                <h5>TEMPLATE TYPE</h5>
+                                    <input type="radio" name="program_type" value="flexible" checked="checked" id="flexible_type"><label for="flexible_type">Flexible</label><br>
+                                    <input type="radio" name="program_type" value="simple" id="simple_type"><label for="simple_type">Simple</label>
+                                <h5>FREEFORM HTML BLOCK</h5>
+                                <textarea type="text" rows="10" class="round"></textarea>
+                                <h5>header/footer</h5>
+                                    <select>
+                                        <option>no header + no footer</option>
+                                        <option>simple header + simple footer</option>
+                                        <option selected="selected">common header + common footer</option>
+                                        <option>sophia HB header + sophia HB footer</option>
+                                    </select>
+                                <h5>Program Settings</h5>
+                                    <label for="at_risk_email"><input type="checkbox" checked="checked" id="at_risk_email">Automated emails to at-risk students</label>
+                                    <label for="show_on_LCD"><input type="checkbox" id="show_on_LCD">Do not show on the learning coach dashboard</label>
+                                    <label for="require_employer"><input type="checkbox" id="require_employer"> Require Employer</label>
+                                    <label for="send_transcript_to_partner" class="bottom-line"><input type="checkbox" id="send_transcript_to_partner">Send students transcripts to Partner</label>
+
+                            </form>
+                            <div class="form-buttons">
+                                <a href="" class="button round-corners">&nbsp;&nbsp;Save&nbsp;&nbsp;</a>
+                                <a href="" class="button round-corners">Preview</a>
+                                <a href="" class="button secondary round-corners">Cancel</a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="large-2 columns">&nbsp;</div>    
+                    </div>
+                </div>
+                <!-- right column -->
+                <div class="large-4 columns"></div>
+            </div>
+        </div>
+
+        <div class="tabs-panel" id="panel6"></div>
+        <div class="tabs-panel" id="panel7"></div>
+        <div class="tabs-panel" id="panel8"></div>
+        <div class="tabs-panel" id="panel9"></div>
+        <div class="tabs-panel" id="panel10"></div>
+      </div>
+   </div>
+</div>
+<!-- #content -->
+   <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- #wrapper -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body> 
+</html>
+

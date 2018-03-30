@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <!-- <script src="../foundation/bower_components/modernizr/modernizr.js"></script>-->
+  </head>
+  
+  <body>
+  <div id="wrapper">
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div>
+    <!-- #header -->
+    <div id="content" class="admin-area-background">
+  <!-- breadcrumbs go below -->  
+      <div class="breadcrumbs-row-color">
+        <div class="row">
+          <div class="large-12 columns">
+            <nav area-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tiered Discounts</a></li>
+                <li><span class="show-for-sr">Current: </span>New Discount</li>
+              </ul>
+            </nav> 
+          </div>
+        </div>
+      </div>   
+      <div class="row">
+        <div class="tabs-panel is-active" id="panel1">
+          <div class="row">
+            <div class="large-12 columns">
+              <p><img width="30px" height="30px" src="../img/back-arrow.png" alt="Стрелочка">&nbsp;<a href="#">Back to Tiered Discounts</a></p>
+              <h4 class="padding-left">New Discount</h4><br/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-5 columns">
+              <h5 class="padding-left">Step 1 - General Options</h5>
+              <label style="margin-left:40px;">Title</label>
+              <input  style="margin-left:40px;" type="text">
+              <label  style="margin-left:40px;">Calculation Type</label>
+              <select style="margin-left: 40px;" style="font-size:13px;">
+                <option>---</option>
+                <option value="fixed">Fixed</option>
+                <option value="percent">Percent</option>
+              </select>  
+              <h5 class="padding-left">Step 2 - Price Levels</h5>
+              <table class="admin-table hover" style="border:1.5px solid grey; margin-left:40px;">
+                <tr>
+                  <th>Quantity</th>
+                  <th>Discount</th>
+                  <th>&nbsp</th>
+                </tr>
+                <tr>
+                  <td width="40%"><input type="text"></td>
+                  <td width="40%"><input type="text"></td>
+                  <td width="20%" style="vertical-align:middle"><a href="">Add</a></td>
+                </tr>
+              </table>
+
+              <h5 class="padding-left">Step 3 - Select Courses</h5>
+              <p style="margin-left: 40px;">Program</p>
+              <select style="margin-left: 40px;" style="font-size:13px;">
+                <option>---</option>
+                <option value="college_courses">College Courses</option>
+                <option value="capella">Capella</option>
+                <option value="wgu">Western Governors University</option>
+                <option value="rasmussen">Rasmussen</option>
+                <option value="jet_blue">Jet Blue</option>
+              </select>
+              <p style="margin-left: 40px;">Course</p>
+              <select style="margin-left: 40px;" style="font-size:13px;">
+                <option>---</option>
+                <option value="credit">CREDIT</option>
+                <option value="ceu">CEU/CREDIT</option>
+                <option value="both">both</option>
+              </select>
+              <h5 class="padding-left">Step 4 - Activate Discount</h5>
+              <div class="switch large" style="margin-left: 40px;">
+                <input class="switch-input" id="discountSwitch" type="checkbox" name="discountleSwitch">
+                <label class="switch-paddle" for="discountSwitch">
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div> 
+              <br>
+              <br>
+              <div class="padding-left">
+                <a href="#" class="f-button blue">&nbsp;Save&nbsp;</a>
+                <a href="#" class="f-button dark-grey">Cancel</a>
+              </div> 
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #content -->
+   <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- #wrapper -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script type="text/javascript" src="../bower_components/foundation-sites/js/foundation.accordion.js"></script>
+    <!--<script type="text/javascript" src="../bower_components/foundation-sites/dist/plugins/foundation.accordion.js"></script>-->
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+    
+  </body> 
+</html>> 
+</html>
+
+

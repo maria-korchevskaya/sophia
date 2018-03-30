@@ -1,0 +1,179 @@
+ul.homepage-menu {
+	/* width: 50px; width of each element in the line */
+	height: 500px;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+
+.homepage-big-icon {
+	float: left; /* чтобы в одну линию были */
+	border: 1px solid #ec2d53;
+	border-radius: 50%;
+	background-color: #ec2d53;
+	margin-right: 100px; /* distance between elements in the line */
+	padding-top: 90px; /* отступ внутри иконки текста от верхнего края иконки */
+	margin-top: 120px; /* отступ от хидера */
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	overflow: hidden; /* либо задать новый класс clearfix,  чтобы контейнер показывал все содержимое с плавающими элементами, обтекал их */
+}
+	.homepage-big-icon a {
+		color: white;
+		font: 15pt sans-serif;
+	}
+
+	.homepage-big-icon:hover {
+		background-color: #f48a9f;
+	}
+
+/* enter credentials overlay */
+#overlay {
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	width: 30%;
+	height: 60%;
+	overflow: hidden;
+	padding-top: 0;
+	display: none;
+	
+}
+
+#overlay form {
+	background: #fff;
+	padding: 1.5em 4em 1em;
+	max-width: 400px;
+	margin: 100px auto 0;
+	box-shadow: 0 0 1em #222;
+	border-radius: 5px;
+	position: relative;
+	bottom: 70px;
+	z-index: 1;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-addon:first-child {
+    border-right: 0;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+/* form p {
+	margin: 0 0 3em 0;
+	position: relative;
+	font-size: 13px;
+}
+
+form label {
+	display: block;
+	font-size: 1.6em;
+	margin: 0 0 .5em;
+	color: #333;
+	padding-top: 0px;
+	padding-bottom: 0;
+} */
+
+
+input[type="text"],
+input[type="password"]:focus {
+	background: #fff;
+	border-radius: 2px;
+	margin: 0;
+}
+
+input[type="password"] {
+	border-radius: 2px;
+	margin: 0;
+}
+
+input[type="submit"] {
+  	box-shadow: 0 3px 0 0 #1D3C6A;
+  	border-radius: 5px;
+  	border: none;
+  	cursor: pointer;
+  	display: block;
+  	font-size: 17px;
+  	line-height: 1.6em;
+  	margin: 2em 0 0;
+  	outline: none;
+  	padding: .8em 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.btn-primary {
+    box-shadow: none;
+    color: #fff;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+}
+
+.btn-primary:hover {
+	background-color: #2e6da4;
+}
+
+a.btn-primary:hover {
+	color: #fff;
+}
+
+.btn-sm {
+    padding: 7px 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.close-icon {
+	position:absolute;
+	left: 380px;
+	top: 3px;
+	color: #a5a49f;
+}
+
+
+
+
+
+
+
+
+

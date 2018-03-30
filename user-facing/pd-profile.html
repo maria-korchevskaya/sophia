@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send to 3PlayMedia</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/user-facing-styles.css"/>
+    <!-- <script src="../foundation/bower_components/modernizr/modernizr.js"></script> -->
+  </head>
+  
+  <body>
+  <!-- pop-up for changing the password -->
+  <div class='tiny reveal' id='change_password' data-reveal >
+        <h4 style="text-align:center;">Change Your Password</h4>
+        <form>
+          <label>NEW PASSWORD</label>
+            <input type="text">
+          <label>RE-ENTER NEW PASSWORD</label> 
+            <input type="text">
+          <label>CURRENT PASSWORD</label>
+            <input type="text">
+        </form>
+        <br>
+        <a class='small secondary button' label='cancel' style="align:center;">Cancel</a>
+        <a class='small button' label='ok'>Save</a>
+        <!-- <a class='close-reveal-modal' aria-label='Сlose'>&#215;</a>-->
+        <button class="close-button" data-close aria-label="Close modal" type="button" style="align:center;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>  
+    <div id="wrapper">
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area dropdown menu" style="background-color:black; height:80px;">
+          <li> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>
+          <li>
+            <a href="#"><img src="../img/magic-menu.png"></a>
+          </li>
+          <li><input type="search" placeholder="Search" class="round"></li>
+        </ul> 
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><img src="../img/avatar.png"></li>
+          <li class="has-submenu">
+            <a href="#" class=""></a>
+            <ul>
+              <li>Profile</li>
+              <li>Sign Out</li>
+            </ul>
+          </li>
+        </ul>
+      </div>  
+    </div> 
+    <!-- #header -->      
+<!-- breadcrumbs go below -->  
+    <div id="content">
+      <div class="breadcrumbs-container" >
+        <div class="row">
+          <div class="large-12 columns">
+            <nav area-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li><a href="#"><img src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/breadcrumbs-home.png"></a></li>
+              </ul>
+            </nav> 
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="large-1 columns">&nbsp;</div>
+        <div class="large-10 columns">
+          <div class="row grey-panel">
+            <div class="large-2 columns">
+              <img src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/profile-avatar.png" class="padding-top" style="margin-bottom:10px;">
+              <a href="#" class="f-button blue round-corners">Add Picture</a>
+            </div>
+            <div class="large-7 columns">
+              <h4 style="padding-top:10px;">PROFILE</h4>
+              <h5 class="bottom-line">Student Information</h5>
+              <form>
+                <table class="profile-table">
+                  <tr style="background-color:#f6f6f6;">
+                    <td width="45%" style="padding-bottom: 0; padding-top: 0;"><label>First Name</label>
+                      <input type="text"></td>
+                    <td width="10%" style="padding-bottom: 0; padding-top: 0;"><label>M.I.</label>
+                      <input type="text"></td>
+                    <td width="45%" style="padding-bottom: 0; padding-top: 0;"><label>Last Name</label>
+                      <input type="text"></td>
+                  </tr>
+                  <tr style="background-color:#f6f6f6;"><td  style="padding-bottom: 0; padding-top: 0;"><label>Email</label><input type="text"></td></tr>
+                </table>
+              </form>
+            </div>
+            <div class="large-3 columns" style="padding-top: 20px;">
+              <p><a href="#" class="f-button blue" data-open="change_password">Change Your Password</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-2 columns">&nbsp;</div>
+            <div class="large-9 columns padding-top-big">
+              <h6 class="bottom-line"><strong>What Grades Do You Teach?</strong> (Check all that apply)</h6>
+              <fieldset>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">K</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox1">1st</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox1">2nd</label>
+                <input id="checkbox4" type="checkbox"><label for="checkbox1">3rd</label>
+                <input id="checkbox5" type="checkbox"><label for="checkbox1">4th</label>
+                <input id="checkbox6" type="checkbox"><label for="checkbox1">5th</label>
+                <input id="checkbox7" type="checkbox"><label for="checkbox1">6th</label>
+                <input id="checkbox8" type="checkbox"><label for="checkbox1">7th</label>
+                <input id="checkbox9" type="checkbox"><label for="checkbox1">8th</label>
+                <input id="checkbox10" type="checkbox"><label for="checkbox1">9th</label></br>
+                <input id="checkbox11" type="checkbox"><label for="checkbox1">10th</label>
+                <input id="checkbox12" type="checkbox"><label for="checkbox1">11th</label>
+                <input id="checkbox13" type="checkbox"><label for="checkbox1">12th</label>
+              </fieldset>
+              <h6 class="bottom-line padding-top-big"><strong>What Subjects Do You Teach?</strong> (Check all that apply)</h6>
+              <table class="profile-table">
+                <tr style="border:none;">
+                  <td>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Math</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Science</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">English Language Arts</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Social Studies</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Other</label>
+                    <textarea class="padding-top-big" style="width:300px;"></textarea>
+                  </td>
+                  <td style="vertical-align:top;">
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">ELL</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Special Education</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Art</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Music</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">World Language</label></br>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Wellness/Physical Education</label>
+                    <br>
+                  </td>
+                </tr>
+              </table>
+              <h6 class="bottom-line padding-top-big"><strong>How Many Years Have You Been Teaching?</strong></h6>
+              <fieldset>
+                <input type="radio" name="grades" value="02" id="grade02" required><label for="grade02">0-2</label>
+                <input type="radio" name="grades" value="35" id="grade35"><label for="grade35">3-5</label>
+                <input type="radio" name="grades" value="610" id="grade610"><label for="grade610">6-10</label>
+                <input type="radio" name="grades" value="1115" id="grade1115"><label for="grade1115">11-15</label>
+                <input type="radio" name="grades" value="1620" id="grade1620"><label for="grade1620">16-20</label>
+                <input type="radio" name="grades" value="21" id="grade21"><label for="grade21">21+</label>
+              </fieldset>
+              <h6 class="bottom-line padding-top-big"><strong>What's the Highest Level of Education You Have Completed?</strong></h6>
+              <table class="profile-table">
+                <tr>
+                  <td>
+                    <ul style="list-style:none;">
+                      <li><input type="radio" name="level" value="bachelors" id="bachelors_level" required><label for="bachelors_level">Bachelor's Degree</label></li>
+                      <li><input type="radio" name="level" value="masters" id="masters_level" required><label for="masters_level">Master's Degree</label></li>
+                      <li><input type="radio" name="level" value="phd" id="phd_level" required><label for="phd_level">PhD</label></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul style="list-style:none;">
+                      <li><input type="radio" name="level" value="bachelors_credit" id="bachelors_credit_level" required><label for="bachelors_credit_level">Bachelor's Degree + Grad Credit</label></li>
+                      <li><input type="radio" name="level" value="masters_credit" id="masters_credit_level" required><label for="masters_credit_level">Master's Degree + Grad Credit</label></li>
+                      <li><input type="radio" name="level" value="edd" id="edd_level" required><label for="edd_level">EdD</label></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <h6 class="bottom-line padding-top-big"><strong>Do You Plan to Go Back for a Higher Degree?</strong></h6>
+              <table class="profile-table">
+                <tr>
+                  <td>
+                    <ul style="list-style:none;">
+                      <li><input type="radio" name="continue" value="1year" id="continue_1year" required><label for="continue_1year">Within a year</label></li>
+                      <li><input type="radio" name="continue" value="2year" id="continue_2year" required><label for="continue_2year">In 1-2 years</label></li>
+                      <li><input type="radio" name="continue" value="4year" id="continue_4year" required><label for="continue_4year">In 2-4 years</label></li>
+                    </ul>
+                  </td>
+                  <td style="vertical-align:top;">
+                    <ul style="list-style:none;">
+                      <li><input type="radio" name="continue" value="5year" id="continue_5year" required><label for="continue_5year">In 5+ years</label></li>
+                      <li><input type="radio" name="continue" value="no" id="continue_no" required><label for="continue_no">No</label></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div style="float:right;">
+                <a href="#" class="f-button dark-grey">Cancel</a>
+                <a href="#" class="f-button blue">&nbsp;Save&nbsp;</a>
+              </div>
+            </div>
+            <div class="large-1 columns">&nbsp;</div>
+          </div>
+        </div>
+        <div class="large-1 columns">&nbsp;</div>
+      </div>
+    </div>
+    <!-- #content -->
+    <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body> 
+</html>  

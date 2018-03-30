@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/content-area-styles.css"/>
+  </head>
+  
+  <body>
+
+    <!-- pop-up to add a new Fact -->
+      <div class='tiny reveal' id='add-new-fact' data-reveal >
+        <h4>New Fact</h4>
+        <form>
+          <label>Category</label>
+          <select style="font-size:13px;">
+            <option value="key_terms">Terms to Know</option>
+            <option value="key_people">People to Know</option>
+            <option value="key_dates">Dates to Know</option>
+            <option value="key_places">Places to Know</option>
+            <option value="key_facts">Facts to Know</option>
+            <option value="key_facts">Ideas to Know</option>
+          </select>
+          <label>Name</label>
+            <input type="text">   
+          <label>Desctiption</label>
+              <textarea rows="3"></textarea>
+        </form>
+        <br>
+        <a class='small secondary button' label='cancel'>Cancel</a>
+        <a class='small button' label='ok'>Save</a>
+        <!-- <a class='close-reveal-modal' aria-label='Сlose'>&#215;</a>-->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+  <div id="wrapper">  
+    <div class="top-bar" id="header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div> 
+    <!-- #header -->      
+  <div id="content" class="admin-area-background">
+  <!-- breadcrumbs go below -->  
+    <div class="breadcrumbs-row-color">
+      <div class="row">
+        <div class="large-12 columns">
+          <nav area-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Concepts</a></li>
+              <li><span class="show-for-sr">Current: </span>Creare New Concept</li>
+            </ul>
+          </nav> 
+        </div>
+      </div>
+    </div>   
+
+    <!-- tabs go below --> 
+    <div class="row">
+      <ul class="tabs" data-tabs id="header-menu">
+        <li class="tabs-title is-active"><a href="#panel1" area-selected="true">Concepts</a></li>
+        <li class="tabs-title"><a href="#panel2">Course Manager</a></li>
+        <li class="tabs-title"><a href="#panel3">Assessments</a></li>
+        <li class="tabs-title"><a href="#panel4">Tutorials</a></li>
+        <li class="tabs-title"><a href="#panel5">Questions</a></li>
+      </ul> 
+    </div>
+    
+    <div class="row">
+      <div class="tabs-content" data-tabs-content="header-menu">
+        <div class="tabs-panel is-active" id="panel1">
+          <div class="row">
+            <div class="large-12 columns">
+              <h4 class="padding-left">Add Concept</h4>
+            </div>
+          </div>
+          
+          <div class="row padding-left">
+            <div class="large-8 columns">
+              
+              <label class="titles-font">Concept Name
+                <input type="text">
+              </label>
+              <label class="titles-font">Primary Subject
+                <select>
+                  <option value="#"></option>
+                </select>
+              </label>
+              <label class="titles-font">Topic
+                <select>
+                  <option value="#"></option>
+                </select>
+              </label>
+              <label class="titles-font">Concept Description (optional)
+              <textarea rows="5"></textarea>
+            </label>
+            <label class="titles-font">Objective
+              <textarea rows="5"></textarea>
+            </label>
+
+            <label class="titles-font" style="margin-top:20px;">Terms Defined (optional) <!-- do we really need this field -->
+              <input type="text">
+            </label>
+           
+            <div id="key_points_list">
+            <label  for="key_points_button" class="padding-bottom titles-font">Key Points</label>
+              <a href="#" class="f-button grey" id="key_points_button">Add Point</a>
+            </div>
+              
+            <div>
+            <label class="padding-bottom titles-font" style="margin-top:20px;">Shared Facts</label>
+                <a href="#" class="f-button grey" data-open="add-new-fact">New Fact</a>
+                <!-- <table style="margin-top:20px;" class="admin-table hover">
+                  <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td>Ethics</td>
+                    <td>Key Terms</td>
+                    <td><a href="#">edit</a></td>
+                    <td><a href="#">remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>Richard Feinman</td>
+                    <td>Key People</td>
+                    <td><a href="#">edit</a></td>
+                    <td><a href="#">remove</a></td>
+                  </tr>
+                  <tr>
+                    <td>Chris Hayes</td>
+                    <td>Key People</td>
+                    <td><a href="#">edit</a></td>
+                    <td><a href="#">remove</a></td>
+                  </tr>
+                </table>-->
+<ul class="vertical menu" data-accordion-menu style="margin-top:20px;">
+  <li class="shared_fact_title">
+    <a href="#" style="color:black">Terms to Know</a>
+    <ul class="menu vertical nested shared_fact_content">
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+    </ul>
+  </li>
+  <li class="shared_fact_title">
+    <a href="#" style="color:black">People to Know</a>
+    <ul class="menu vertical nested shared_fact_content">
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+    </ul>
+  </li>  
+  <li class="shared_fact_title">
+    <a href="#" style="color:black">Dates to Know</a>
+    <ul class="menu vertical nested shared_fact_content">
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+    </ul>
+  </li>
+  <li class="shared_fact_title">
+    <a href="#" style="color:black">Places to Know</a>
+    <ul class="menu vertical nested shared_fact_content">
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+      <div class="shared_fact_item">
+        <dl>Ethics<span class="edit_remove">&nbsp;&nbsp;<a href="#"><small>edit</small></a>&nbsp;&nbsp;<a href="#"><small>remove</small></a></span></dl>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd><br>
+      </div>
+    </ul>
+  </li>
+</ul>
+
+            </div>
+
+            <label class="titles-font" style="margin-top:20px;">Academic Concept ID
+              <input type='text'>
+            </label>
+            <label class="titles-font">Instructions to Author
+              <textarea rows='3'></textarea>
+              <p class="admin-hint">HINT:ONLY AUTHOR WILL SEE THIS</p>
+            </label>
+            <label class="padding-bottom titles-font">Aligned to Standards</label>
+                <a href="#" class="f-button grey">Add Standard</a>
+            
+              <label class="titles-font" style="margin-top:20px;">Quiz Questions Needed
+                <input type='text' style="width:335px;">
+              </label>
+              <label class="titles-font">Tutorials Needed
+                <input type='text' style="width:335px;">
+              </label>
+              <input type='checkbox'><label class="titles-font">Publish this concept</label>
+            
+            <p class="titles-font" style="margin-top:15px;">Content Type Needed</p>
+            <div class="row">
+              <div class="large-6 columns">
+                <label>Slideshow
+                  <input type='text'>
+                </label>
+                <label>Text/Image/Audio
+                  <input type='text'>
+                </label>
+                <label>Off-camera Video
+                  <input type='text'>
+                </label>
+              </div>
+              <div class="large-6 columns">
+                <label>On-camera Video
+                  <input type='text'>
+                </label>
+                <label>Multi-media
+                  <input type='text'>
+                </label>
+              </div>
+            </div>
+
+            </div>
+          </div> 
+          </br>
+          <div class="row padding-left">
+            <div class="medium-6 columns">
+              <button type="button" class="button round-corners">Save&nbsp;&nbsp;</button>
+              <button type="button" class="secondary button round-corners">Cancel</button>
+            </div> 
+            <div class="medium-6 columns">&nbsp;</div> 
+          </div>  
+        </div>
+
+
+        <div class="tabs-panel" id="panel2"></div>
+        <div class="tabs-panel" id="panel3"></div>
+        <div class="tabs-panel" id="panel4"></div>
+        <div class="tabs-panel" id="panel5"></div>
+      </div>
+    </div>
+  </div> 
+  <!-- #content -->
+   <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- #wrapper -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script type="text/javascript" src="../bower_components/foundation-sites/js/foundation.accordion.js"></script>
+    <!--<script type="text/javascript" src="../bower_components/foundation-sites/dist/plugins/foundation.accordion.js"></script>-->
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+    
+  </body> 
+</html>> 
+</html>

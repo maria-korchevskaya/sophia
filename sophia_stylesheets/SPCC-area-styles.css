@@ -1,0 +1,142 @@
+.challenge-panel {
+	padding: .6em 0;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+	.row .challenge-panel {
+		height: 40px;
+	}
+
+	.callout.challenge-panel {
+		margin-left: .3em;
+	}
+
+	.challenge-panel a {
+		color: black;
+	}
+		.challenge-panel a:hover {
+			text-decoration: underline;
+		}
+
+	a.link-underlined {
+		text-decoration: underline;
+	}
+
+.touchstone-details-wrapper {
+	background-color: #ebebeb;
+	border: 1px solid rgba(10, 10, 10, 0.25);
+	width: 47em;
+	padding: .5em 1.2em 0 1em;
+	font-size: 13px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}	
+
+	.touchstone-details-wrapper .callout {
+		border: none;
+		background: transparent;
+	}
+
+	.touchstone-details-wrapper .row {
+		padding-bottom: .5em;
+			
+	}
+
+	.touchstone-details-wrapper a {
+		color: black;
+	}
+
+.expand-details	{
+	font-size: 13px;
+	padding: .5em 1em 0 1em;
+	display: none;
+	
+}
+
+	.expand-details p {
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+
+	.expand-details label {
+		font-size: 13px;
+	}
+
+	.expand-details input[type='checkbox'] {
+		margin: 0;
+	}
+
+/* this is the block with styles for the questions navigation */	
+
+.dividing-line {
+	display: inline-block;
+	width: 18px;
+	height: 2px;
+	background: #fcd106;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 0;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+	.dividing-line:first-child {
+		display: none;
+	}
+
+.question-number-container {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+	text-align: center;
+	height: 3em;
+	width: 3em;
+	padding: 0.85714em 0 0.85714em;
+	border: 2px solid #fcd106;
+	border-radius: 4px;
+	background: #fff;
+	vertical-align: middle;
+	margin-top: 3px;
+}
+
+	.question-number-container:first-child {
+		margin-left: 15px;
+	}
+
+
+    a.question-number-container {
+    	color: black;
+    }
+
+	a.question-number-container.current-question {
+		background: #fcd106;
+		color: #fff;
+		margin: 0;
+	}
+
+/* styles for /spcc/LC_notifications_tab.html - incorrect version */
+#notifications-left-column {
+	width: 350px;
+	border-right: 1px solid #cccccc;
+}
+#notifications-right-column {
+	font-size: 14px;
+}
+
+.current_message {
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+
+/* styles for /spcc/LC_notifications_tab_1.html */
+
+
+
+
+
+
+
+

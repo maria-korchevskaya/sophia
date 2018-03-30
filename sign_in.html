@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="foundation/css/app.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css"/>
+    <style type="text/css">
+     body { background: url(img/homepage3.jpg); background-size: 800px 800px;}
+    </style>
+
+  </head>
+    
+  <body>
+    <div class="top-bar header">
+      <div class="top-bar-left">
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div>
+
+    <div class = "row">
+      <div class = "large-4 large-offset-3 columns">
+        <section>
+          <form>
+            <label>Login
+              <input type = 'text' id = "login">
+            </label>
+            <label>Password
+              <input type = 'text' id = "password">
+            </label>
+            <button type="button" id = "sign_in_button" class="round button">Sign In&nbsp;&nbsp;</button>
+          </form>  
+        </section>
+      </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
+    <script src="foundation/js/app.js"></script>
+    <script src="javascript/app.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+  </body> 
+</html>
+    

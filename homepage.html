@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/9871d9230b.js"></script>
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="bower_components/foundation/css/foundation.css"> -->
+
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="sophia_stylesheets/homepage-styles.css"/>
+
+    <style type="text/css">
+     body { background: url(img/homepage3.jpg); background-size:1000px;}
+    </style>
+    <!-- <script src="bower_components/foundation/js/vendor/modernizr.js"></script> -->
+  </head>
+    
+  <body>
+    <div id="wrapper">
+    <!-- login overlay -->
+    <div id="overlay">
+      <form action="#" method="post">
+        <span class="close-icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <div class="input-group margin-bottom-sm">
+          <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+          <input class="form-control" type="text" placeholder="Username" id="username">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+          <input class="form-control" type="password" placeholder="Password" id="password">
+        </div>
+        <a class="btn btn-primary btn-sm" href="#" id="submit" type="submit">
+          <i class="fa fa-coffee" aria-hidden="true"></i> Submit</a>
+      </form>
+    </div>
+
+
+      <!-- <form action="#" method="post">
+        <p>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+        </p>
+        <p>
+          <input type="submit" value="SUBMIT" id="submit">
+        </p>
+      </form> -->
+    
+
+
+    <div class="top-bar" id="header">
+      <div class="top-bar-left" >
+        <ul class="title-area">
+          <li class="name"> 
+            <h1><a href="#"><img src="img/homepage-icon.png"></a></h1>
+          </li>  
+        </ul> 
+      </div>  
+    </div>
+    <!-- #header -->
+    <div class="row" id="content">
+      <div class="large-12 columns">
+        <div>
+          <ul class="homepage-menu">
+           <li class="homepage-big-icon" id="askCredentials"><a href="#">Sophia</a></li>
+           <li class="homepage-big-icon"><a href="#">Templates</a></li>
+           <li class="homepage-big-icon"><a href="personal/how_i_learned_scss.html">Personal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- #content -->
+    
+    <!-- <div class="row">
+      <div class="large-12 columns">&nbsp;</div>
+    </div>  
+      <div class="row place-on-center">
+        <div class="large-3 columns">&nbsp;</div>
+        <div class="large-1 columns"><a href="sophia.html" class="button success">&nbsp;&nbsp;&nbsp;&nbsp;SOPHIA&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+        <div class="large-1 columns">&nbsp;</div>
+        <div class="large-1 columns"><a href="#" class="button">TEMPLATES</a></div>
+        <div class="large-1 columns">&nbsp;</div>
+        <div class="large-1 columns"><a href="#" class="button">PERSONAL</a></div>
+        <div class="large-3 columns">&nbsp;</div>
+      </div> -->
+
+    <div id="footer">
+      <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+      </div>
+    </div>
+    <!-- #footer -->
+  </div>
+  <!-- #wrapper -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="sophia_javascript/app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body> 
+</html>
+    

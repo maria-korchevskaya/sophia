@@ -1,0 +1,233 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SP Students</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/9871d9230b.js"></script>
+    <link rel="shortcut icon" type="text/css" href="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/favicon1.ico">
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/foundation/css/foundation.css"> -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../sophia_stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/common-styles.css"/>
+    <link rel="stylesheet" href="../sophia_stylesheets/SPCC-area-styles.css"/>
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <div class='reveal' id='override-modal' data-reveal style="width:400px">
+        <h2 class='reveal'>&nbsp;</h2>
+        <p class='lead'>Notes for this question:</p>
+        <textarea rows="3"></textarea>
+        <br>
+        <a class='small secondary button' label='cancel'>Cancel</a>
+        <a class='small button' label='ok'>OK</a>
+        <!-- <a class='close-reveal-modal' aria-label='Сlose'>&#215;</a>-->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="top-bar" id="header">
+        <div class="top-bar-left">
+          <ul class="title-area">
+            <li class="name"> 
+              <h1><a href="#"><img src="../img/homepage-icon.png"></a></h1>
+            </li>  
+          </ul> 
+        </div>  
+      </div> 
+      <!-- #header -->
+      <div id="content" class="admin-area-background">
+        <div class="breadcrumbs-row-color">
+          <div class="row">
+            <div class="large-12 columns">
+              <nav area-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">SP Students</a></li>
+                  <li><a href="#">John Smith</a></li>
+                  <li><span class="show-for-sr">Current: </span>John Smith - College Algebra:default version - Question 3</li>
+
+                </ul>
+              </nav> 
+            </div>
+          </div>
+        </div>   
+        <!-- tabs go below --> 
+        <div class="row">
+          <ul class="tabs" data-tabs id="header-menu">
+            <li class="tabs-title"><a href="#panel1">Users</a></li>
+            <li class="tabs-title is-active"><a href="#panel2" area-selected="true">SP Students</a></li>
+            <li class="tabs-title"><a href="#panel3">Section Manager</a></li>
+            <li class="tabs-title"><a href="#panel4">SP Class View</a></li>
+          </ul> 
+        </div>
+        <div class="row">
+          <div class="tabs-content" data-tabs-content="header-menu">
+              <div class="tabs-panel is-active" id="panel1" style="margin-left:20px;">
+                <div class="row">
+                      <div class="large-12 columns">
+                          <p><img width="30px" height="30px" src="https://s3.eu-central-1.amazonaws.com/dev-maria.com/img/back-arrow.png" alt="Стрелочка">&nbsp;<a href="improve_recurring_payments_display.html">Back to student record</a></p>
+                          <h5>Edit English Composition I assessment details for John Smith</h5><br>
+                      </div>
+                </div>
+
+                <div class="row">
+                  <div class="large-7 columns">
+                        <p>1.First Competency Title</p>
+                        <div class="touchstone-details-wrapper round">
+                          <div class="row">
+                            <div class="large-3 columns"><p>Challenge 1 : 10/11</p></div>
+                            <div class="large-1 columns">&nbsp;</div>
+                            <div class="large-4 columns"><p>Version 6</p></div>
+                            <div class="large-4 columns"><p style="text-align:right"><a href="#" class="link-underlined">reset</a>&nbsp;&nbsp;&nbsp;<a href="#" class="expand">Expand</a></p></div>
+                            <div class="row expand-details">
+                              <div class="large-12 columns">
+                                <table style="font-size:">
+                                  <tr>
+                                    <td>Question#</td>
+                                    <td>Attempts Remaining</td>
+                                    <td>Student's answer</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>1 view</td>
+                                    <td>2</td>
+                                    <td>prewriting</td>
+                                    <td><i class="fa fa-check" aria-hidden="true" style="color:green"></i></td>
+                                    <td></td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2 view</td>
+                                    <td>0</td>
+                                    <td>(rating)</td>
+                                    <td><i class="fa fa-times" aria-hidden="true" style="color:red"></i></td>
+                                    <td><input type="checkbox" id="override"><label for="override">Override</label></td>
+                                    <td><a data-open="override-modal" style="text-decoration:underline;">notes</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>3 view</td>
+                                    <td>1</td>
+                                    <td>steaks<br>growl</td>
+                                    <td><i class="fa fa-check" aria-hidden="true" style="color:green"></i></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4 view</td>
+                                    <td>2</td>
+                                    <td>monday<br>tuesday<br>wednesday</td>
+                                    <td><i class="fa fa-times" aria-hidden="true" style="color:red"></i></td>
+                                    <td><input type="checkbox" id="override"><label for="override">Override</label></td>
+                                    <td><a data-open="override-modal" style="text-decoration:underline;">notes</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>5 view</td>
+                                    <td>0</td>
+                                    <td>(visual select)</td>
+                                    <td><i class="fa fa-check" aria-hidden="true" style="color:green"></i></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td>6 view</td>
+                                    <td>1</td>
+                                    <td>steaks<br>growl</td>
+                                    <td><i class="fa fa-check" aria-hidden="true" style="color:green"></i></td>
+                                    <td></td>
+                                    <td><a data-open="override-modal" style="text-decoration:underline;">notes</a></td>
+                                  </tr>
+                                </table>
+                                <br>
+                                <a href="#" class="f-button dark-grey small float-right" style="margin-left:10px;">Cancel</a>
+                                <a href="#" class="f-button blue small float-right">Update</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="touchstone-details-wrapper round">
+                          <div class="row">
+                            <div class="large-3 columns"><p>Challenge 2 : 10/11</p></div>
+                            <div class="large-1 columns">&nbsp;</div>
+                            <div class="large-4 columns"><p>Version 6</p></div>
+                            <div class="large-4 columns"><p style="text-align:right"><a href="#" class="link-underlined">reset</a>&nbsp;&nbsp;&nbsp;<a href="#">Expand</a></p></div>
+                          </div>
+                        </div>
+
+                        <div class="touchstone-details-wrapper round">
+                          <div class="row">
+                            <div class="large-3 columns"><p>Challenge 3 : 10/11</p></div>
+                            <div class="large-1 columns">&nbsp;</div>
+                            <div class="large-4 columns"><p>Version 6</p></div>
+                            <div class="large-4 columns"><p style="text-align:right"><a href="#" class="link-underlined">reset</a>&nbsp;&nbsp;&nbsp;<a href="#">Expand</a></p></div>
+                          </div>
+                        </div>
+
+                        <div class="touchstone-details-wrapper round">
+                          <div class="row">
+                            <div class="large-3 columns"><p>Milestone 1 : 20/25</p></div>
+                            <div class="large-1 columns">&nbsp;</div>
+                            <div class="large-4 columns"><p>&nbsp;</p></div>
+                            <div class="large-4 columns"><p style="text-align:right"><a href="#" class="link-underlined">reset</a>&nbsp;&nbsp;&nbsp;<a href="#" class="expand">Expand</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="touchstone-details-wrapper round">
+                          <div class="row">
+                            <div class="large-3 columns"><p>Touchstone 1:</p></div>
+                            <div class="large-1 columns">&nbsp;</div>
+                            <div class="large-4 columns"><p>&nbsp;</p></div>
+                            <div class="large-4 columns"><p style="text-align:right"><a href="#" class="expand">Expand</a></p></div>
+                            <div class="row expand-details">
+                              <div class="large-12 columns">
+                                <p>Upload Touchstone PDF</p>
+                                <input type="file" value="upload">
+                                <p>
+                                <a href="#" class="f-button dark-grey small float-right" style="margin-left:10px;">Cancel</a>
+                                <a href="#" class="f-button blue small float-right">Update</a>
+                                </p>
+                                <br>
+                                <br>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>  
+                  <div class="large-5 columns">&nbsp;</div>
+                </div>
+
+              </div>
+            <!-- not active tabs -->
+              <div class="tabs-panel" id="panel2"></div>
+              <div class="tabs-panel" id="panel3"></div>
+              <div class="tabs-panel" id="panel4"></div>
+              <div class="tabs-panel" id="panel5"></div>
+              <div class="tabs-panel" id="panel6"></div>
+              <div class="tabs-panel" id="panel7"></div>
+              <!-- end -->
+          </div>
+        </div>    
+      </div>
+      <!-- #content -->
+      <div id="footer">
+        <div class="box">
+          <p> (c) Maria Korchevskaya</p>
+        </div>
+      </div>
+      <!-- #footer -->
+    </div>
+    <!-- #wrapper -->  
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../sophia_javascript/app.js"></script>
+  </body> 
+</html>
+    
